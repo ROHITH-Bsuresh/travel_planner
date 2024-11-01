@@ -1,0 +1,49 @@
+.package-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .package-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .package-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .package-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .package-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .package-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .package-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .package-btn:hover {
+    background-color: #e6b800;
+  }
+  

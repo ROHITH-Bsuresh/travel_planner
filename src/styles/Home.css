@@ -1,0 +1,99 @@
+.home-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Remove underline from all links within the home page */
+.home-page a {
+    text-decoration: none; /* No underline for links */
+}
+
+/* Popular Packages Section */
+.popular-packages {
+    margin: 20px 0; /* Add margin around the section */
+}
+
+.popular-packages h2 {
+    font-size: 2em; /* Make the title larger and more prominent */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Add some space below the title */
+    text-align: center; /* Center align the title */
+}
+
+.package-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Add equal space between the cards */
+}
+
+/* Styling for each package card */
+.package-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    width: 240px; /* Fixed width for all cards */
+    height: 240px; /* Fixed height for square-like shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White text for contrast */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Remove underline from package card links */
+.package-card a {
+    color: inherit;
+    text-decoration: none; /* No underline for links */
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.package-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff; /* Ensure the title text is white */
+}
+
+.package-card p {
+    color: #fff; /* Ensure the paragraph text is white */
+    margin: 10px 0;
+}
+
+/* Welcome content styling */
+.welcome-content {
+    background-color: #e9ecef;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    text-align: left;
+    width: 100%; /* Expand to full width */
+    max-width: 1200px; /* Max width to align content nicely */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Ensure no underline in welcome content */
+.welcome-content a {
+    text-decoration: none; /* No underline for any links in the welcome content */
+}

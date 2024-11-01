@@ -1,0 +1,78 @@
+/* src/styles/GroupTour.css */
+
+.group-tour-page {
+  max-width: 1200px; /* Centering the page content */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+p{
+  text-align: center;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+}
+
+.group-tour-cards {
+  margin-bottom: 40px;
+}
+
+.tour-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for multiple rows */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+}
+
+.tour-card {
+  position: relative;
+  width: 350px; /* Increased width for bigger cards */
+  height: 250px; /* Increased height for bigger cards */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s; /* Smooth hover effect */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text at the bottom */
+  padding: 10px; /* Padding for the content */
+}
+
+.tour-card a {
+  color: white; /* White text for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.tour-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.tour-card h3 {
+  margin: 0;
+  font-size: 1.3em; /* Title size */
+}
+
+.tour-card p {
+  margin: 5px 0 0;
+  font-size: 1em; /* Description size */
+}
+
+/* Welcome Content Styles */
+.welcome-content {
+  text-align: center; /* Center the welcome text */
+  margin-top: 40px;
+  font-size: 1.1em; /* Welcome text size */
+  color: #555; /* Welcome text color */
+}
