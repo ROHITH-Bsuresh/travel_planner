@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+/* Center all content within the tour package page */
+.tour-package-page > * {
+  margin: 0 auto; /* Centering for all direct children */
+}
+
+/* Location */
 .location {
   color: #888;
   font-size: 18px;

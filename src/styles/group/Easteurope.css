@@ -1,0 +1,31 @@
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  }
+  
+  .gallery-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 100px; /* Set a fixed width for the thumbnails */
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-item {
+      width: 80px; /* Reduce the size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-item {
+      width: 60px; /* Even smaller size on extra small screens */
+    }
+  }
+  

@@ -1,0 +1,270 @@
+/* Enhanced Dubaichennai.css */
+
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap');
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffffff 40%, #ffffff 100%);
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+/* Large Image Styles */
+.large-image-container {
+    text-align: center; /* Center the large image */
+    margin: 20px 0; /* Add margin around the image */
+  }
+  
+  .large-image {
+    width: 100%; /* Use full width of the container */
+    max-width: 800px; /* Limit max size for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional for rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  }
+  
+  /* Thumbnails Styles */
+  .image-gallery {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center thumbnails */
+    gap: 10px; /* Space between thumbnails */
+    margin-top: 10px; /* Add space above the thumbnails */
+  }
+  
+  .gallery-item {
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.2s; /* Smooth transition for scaling */
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge thumbnail on hover */
+  }
+  
+  .gallery-image {
+    width: 100px; /* Fixed size for thumbnails */
+    height: 60px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio of images */
+    border-radius: 4px; /* Optional for rounded corners */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
+  
+
+.dubai-package-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.dubai-package-page > * {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dubai-package-page > *:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  color: #0a3d62;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header-section .subheader {
+  font-size: 1.2rem;
+  color: #576574;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.header-section .location {
+  font-size: 1.1rem;
+  color: #3b3b98;
+}
+
+/* Tour Overview Section */
+.tour-overview {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-overview .tour-type {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+.tour-overview .price, .tour-overview .cost {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.book-now {
+  background-color: #0a3d62;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 15px;
+}
+
+.book-now:hover {
+  background-color: #0652dd;
+  transform: scale(1.05);
+}
+
+.departure-info {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Section Styles */
+.cities-visited, .tour-highlights, .why-choose, .booking-section, .price-details, .tour-info, .additional-notes {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cities-visited:hover, .tour-highlights:hover, .why-choose:hover, .booking-section:hover, .price-details:hover, .tour-info:hover, .additional-notes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cities-visited h2, .tour-highlights h2, .why-choose h2, .booking-section h2, .price-details h2, .tour-info h2, .additional-notes h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: #0a3d62;
+  margin-bottom: 15px;
+}
+
+/* Enhanced Itinerary Section */
+.itinerary-section {
+    width: 100%;
+    max-width: 1200px; /* Increased max width for the entire itinerary section */
+    background: #f9fbfd;
+    border-radius: 15px;
+    padding: 50px; /* Increased padding for more internal space */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    margin-bottom: 30px; /* Increase space below section */
+}
+  
+.itinerary-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem; /* Larger heading font for more emphasis */
+    color: #0a3d62;
+    margin-bottom: 30px;
+}
+  
+.itinerary-day {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 35px; /* Increased padding for more room */
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07); /* Slightly deeper shadow */
+    position: relative;
+}
+  
+.itinerary-day:hover {
+    background-color: #f0f1f3;
+    transform: translateY(-4px);
+}
+  
+.itinerary-day h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; /* Slightly larger font for day title */
+    color: #0a3d62;
+    margin: 0;
+    padding-bottom: 12px; /* Add padding below the day title */
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Table Style */
+.price-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-details td {
+  padding: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.price-details td:first-child {
+  font-weight: bold;
+  color: #0a3d62;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .dubai-package-page {
+    padding: 20px;
+  }
+
+  .tour-overview, .itinerary-section, .tour-info, .additional-notes {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dubai-package-page {
+    padding: 15px;
+  }
+
+  .tour-overview .cost {
+    font-size: 1.8rem;
+  }
+
+  .book-now {
+    width: 100%;
+  }
+
+  .itinerary-day {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dubai-package-page {
+    padding: 10px;
+  }
+
+  .tour-overview .cost {
+    font-size: 1.6rem;
+  }
+
+  .book-now {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

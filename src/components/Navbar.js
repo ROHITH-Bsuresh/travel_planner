@@ -38,6 +38,8 @@ function Navbar() {
           <Link to="/packagebyoutside">Package by Outside</Link>
         </div>
       </div>
+      <Link to="/weather">Weather</Link>
+
       <Link to="/contact">Contact</Link>
     </nav>
   );

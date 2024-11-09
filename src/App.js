@@ -15,9 +15,17 @@ import Ahmedabad from './components/states/Ahmedabad';
 import Himachal from './components/states/Himachal';
 
 
-import GroupTour from './components/GroupTour';
+import GroupTour from './components/GroupTour';  
+import Bill from './components/group/Bill';
+import Dubaichennai from './components/group/Dubaichennai';
+import Dubaicovai from './components/group/Dubaicovai';
+import Europechennai from './components/group/Europechennai';
+import Easteurope from './components/group/Easteurope';
+
 import Volunteer from './components/activities/Volunteer';
 import PackageByOutside from './components/activities/PackageByOutside';
+import Weather from './components/Weather';
+
 import Contact from './components/Contact';
 
 function App() {
@@ -41,9 +49,16 @@ function App() {
 
 
         <Route path="/grouptour" element={<GroupTour />} />
+        <Route path="/bill" element={<Bill />} />
+        <Route path="/dubaichennai" element={<Dubaichennai />} />
+        <Route path="/dubaicovai" element={<Dubaicovai />} />
+        <Route path="/europechennai" element={<Europechennai />} />
+        <Route path="/easteurope" element={<Easteurope />} />
+
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/packagebyoutside" element={<PackageByOutside />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/weather" element={<Weather />} />
         {/* Add routes for the remaining states and activities */}
       </Routes>
     </Router>
