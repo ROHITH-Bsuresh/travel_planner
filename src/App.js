@@ -20,6 +20,10 @@ import Dubaichennai from './components/group/Dubaichennai';
 import Dubaicovai from './components/group/Dubaicovai';
 import Europechennai from './components/group/Europechennai';
 import Easteurope from './components/group/Easteurope';
+import Ukchennai from './components/group/Ukchennai';
+import Malaysia from './components/group/Malaysia';
+import Baku from './components/group/Baku';
+import Turkey from './components/group/Turkey';
 
 import Volunteer from './components/activities/Volunteer';
 import PackageByOutside from './components/activities/PackageByOutside';
@@ -57,6 +61,10 @@ function App() {
         <Route path="/dubaicovai" element={<Dubaicovai />} />
         <Route path="/europechennai" element={<Europechennai />} />
         <Route path="/easteurope" element={<Easteurope />} />
+        <Route path="/ukchennai" element={<Ukchennai />} />
+        <Route path="/malaysia" element={<Malaysia />} />
+        <Route path="/baku" element={<Baku />} />
+        <Route path="/Turkey" element={<Turkey />} />
 
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/packagebyoutside" element={<PackageByOutside />} />

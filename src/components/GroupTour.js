@@ -50,28 +50,28 @@ function GroupTour() {
           </div>
 
           <div className="tour-card" style={{ backgroundImage: 'url(/Grouptour/7.jpg)' }}>
-            <a href="/scenic-uk-chennai">
+            <a href="/Ukchennai">
               <h3>Scenic UK Group Tour ex Chennai</h3>
               <p>9 Nights 10 Days - London</p>
             </a>
           </div>
 
           <div className="tour-card" style={{ backgroundImage: 'url(/Grouptour/8.jpg)' }}>
-            <a href="/malaysia-singapore-chennai">
+            <a href="/Malaysia">
               <h3>Malaysia and Singapore Group Departure ex Chennai</h3>
               <p>6 Nights 7 Days - Kuala Lumpur</p>
             </a>
           </div>
 
           <div className="tour-card" style={{ backgroundImage: 'url(/Grouptour/9.jpg)' }}>
-            <a href="/blissful-baku-chennai">
+            <a href="/Baku">
               <h3>Blissful Baku Group Tour ex Chennai</h3>
               <p>4 Nights 5 Days</p>
             </a>
           </div>
 
           <div className="tour-card" style={{ backgroundImage: 'url(/Grouptour/10.jpg)' }}>
-            <a href="/remarkable-turkey-chennai">
+            <a href="/Turkey">
               <h3>Remarkable Turkey Group Tour ex Chennai</h3>
               <p>Istanbul | Kusadasi | Pamukkale | Cappadocia</p>
             </a>

@@ -1,0 +1,219 @@
+/* Baku.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  .baku-package-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #2c3e50;
+  }
+  
+  .subheader {
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-top: 5px;
+  }
+  
+  .tour-type {
+    font-size: 24px;
+    color: #2980b9;
+    margin-top: 10px;
+  }
+  
+  .large-image-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .large-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .gallery-item {
+    cursor: pointer;
+  }
+  
+  .gallery-image {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .price {
+    font-size: 28px;
+    color: #e74c3c;
+    margin-top: 40px;
+  }
+  
+  .cost {
+    font-size: 48px;
+    color: #e74c3c;
+  }
+  
+  .per-person {
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  
+  .book-now {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 0;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-now:hover {
+    background-color: #3498db;
+  }
+  
+  .tour-highlights {
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .tour-highlights h2 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  .tour-highlights ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .tour-highlights li {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  .price-details {
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .price-details h2 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  .price-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .price-details td {
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .itinerary-section {
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .itinerary-section h2 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  .itinerary-day {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .itinerary-day:hover {
+    background-color: #bdc3c7;
+  }
+  
+  .itinerary-day h3 {
+    font-size: 24px;
+    color: #2980b9;
+  }
+  
+  .itinerary-day.active {
+    background-color: #e6e6e6;
+    color: white;
+  }
+  
+  .itinerary-day ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  
+  .itinerary-day ul li {
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  
+  .additional-notes {
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .additional-notes h2 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  .additional-notes ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .additional-notes li {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
