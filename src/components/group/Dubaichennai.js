@@ -161,22 +161,28 @@ const DubaiChennai = () => {
         </table>
       </div>
 
-      {/* Itinerary Section */}
-      <section className="itinerary-section">
-        <h2>Itinerary (Day by Day)</h2>
-        {itineraryDays.map((item, index) => (
-          <div className="itinerary-day" key={index}>
-            <h3 onClick={() => toggleDay(index)}>{item.day}</h3>
+     {/* Itinerary Section */}
+     <div className="itinerary-section">
+        <h2>Tour Itinerary</h2>
+        {itineraryDays.map((day, index) => (
+          <div
+            key={index}
+            className={`itinerary-day ${selectedDay === index ? 'active' : ''}`}
+            onClick={() => toggleDay(index)}
+          >
+            <h3>{day.day}</h3>
             {selectedDay === index && (
               <ul>
-                {item.activities.map((activity, idx) => (
-                  <li key={idx}>{activity}</li>
+                {day.activities.map((activity, activityIndex) => (
+                  <li key={activityIndex}>{activity}</li>
                 ))}
               </ul>
             )}
           </div>
         ))}
-      </section>
+      </div>
+
+
 
       {/* Tour Information */}
       <div className="tour-info">

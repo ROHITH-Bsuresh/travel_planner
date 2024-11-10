@@ -94,6 +94,28 @@ const PuneMahabaleshwarTour = () => {
 
         <p className="duration">Duration: 3 Nights / 4 Days</p>
       </section>
+      <section className="booking-info">
+  <h3>Booking Information</h3>
+  <p>
+    To book your next adventure with <strong>Royal Seats</strong>, please call the number: <strong>9344733072</strong>.
+  </p>
+  <p>
+    The booking process is exclusively available via phone call or at one of our nearby offices.
+  </p>
+  <p>
+    Kindly ensure that you have all your travel details ready when calling, so our team can assist you promptly and ensure a smooth booking experience.
+  </p>
+  <p>
+    For any further inquiries, feel free to reach out to us during business hours. We are happy to assist you with any questions you may have.
+  </p>
+  <p>
+    Our dedicated office staff will guide you through the entire booking process, ensuring that all your preferences are taken into account for a personalized experience.
+  </p>
+  <p>
+    At <strong>Royal Seats</strong>, we are committed to making your travel dreams come true and providing you with an unforgettable experience.
+  </p>
+</section>
+
     </div>
   );
 };

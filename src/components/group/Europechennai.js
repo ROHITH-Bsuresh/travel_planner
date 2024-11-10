@@ -216,7 +216,11 @@ const EuropeChennai = () => {
       <div className="itinerary-section">
         <h2>Tour Itinerary</h2>
         {itineraryDays.map((day, index) => (
-          <div key={index} className="itinerary-day" onClick={() => toggleDay(index)}>
+          <div
+            key={index}
+            className={`itinerary-day ${selectedDay === index ? 'active' : ''}`}
+            onClick={() => toggleDay(index)}
+          >
             <h3>{day.day}</h3>
             {selectedDay === index && (
               <ul>
@@ -228,6 +232,7 @@ const EuropeChennai = () => {
           </div>
         ))}
       </div>
+
 
       {/* Additional Information */}
       <div className="additional-notes">

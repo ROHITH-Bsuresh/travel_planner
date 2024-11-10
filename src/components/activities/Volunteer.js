@@ -90,82 +90,86 @@ const VolunteerPage = () => {
 
       {/* Volunteer Packages Section */}
       <section className="packages-section">
-        <h2>Volunteer Packages</h2>
-        <div className="card-container">
-          {/* Volunteer Cards */}
-          <div className="card">
-            <img src="vol-tamil.jpeg" alt="Volunteer in Tamil Nadu" className="card-img-top" />
-            <div className="card-body">
-              <h5 className="card-title">Volunteer in Tamil Nadu</h5>
-              <p className="card-text">Stay with locals and support community projects in Tamil Nadu.</p>
-              <p><strong>Duration:</strong> 2 weeks</p>
-              <p><strong>Skill Required:</strong> Basic English, teaching or community outreach skills</p>
-              <p><strong>Description:</strong> Work with local schools to support educational programs and community development.</p>
-              <button onClick={openForm} className="apply-button">Apply Now</button>
-            </div>
-          </div>
+  <h2>Volunteer Packages</h2>
+  <div className="card-container">
+    {/* Volunteer Cards */}
+    <div className="card">
+      <img src="vol-tamil.jpeg" alt="Volunteer in Tamil Nadu" className="card-img-top" />
+      <div className="card-body">
+        <h5 className="card-title">Volunteer in Tamil Nadu</h5>
+        <p className="card-text">Stay with locals and support community projects in Tamil Nadu.</p>
+        <p><strong>Duration:</strong> 2 weeks</p>
+        <p><strong>Skill Required:</strong> Basic English, teaching or community outreach skills</p>
+        <p><strong>Description:</strong> Work with local schools to support educational programs and community development.</p>
+        <p><strong>Important Note:</strong> You cannot participate as a team. We have already fixed the teams on our side.</p>
+        <p><strong>Accommodation:</strong> Includes all expenses, ranging from ₹8,000.</p>
+        <p><strong>About Royal Seats:</strong> Royal Seats offers unique volunteer travel experiences that blend cultural immersion with social impact. Join us to make a difference while exploring new places!</p>
+        <button onClick={openForm} className="apply-button">Apply Now</button>
+      </div>
+    </div>
 
-          <div className="card">
-            <img src="vol-kerala.avif" alt="Volunteer in Kerala" className="card-img-top" />
-            <div className="card-body">
-              <h5 className="card-title">Volunteer in Kerala</h5>
-              <p className="card-text">Experience Kerala’s culture and contribute to local causes.</p>
-              <p><strong>Duration:</strong> 3 weeks</p>
-              <p><strong>Skill Required:</strong> Environmental awareness, basic conservation techniques</p>
-              <p><strong>Description:</strong> Engage in environmental conservation projects, including beach clean-ups and tree planting initiatives.</p>
-              <button onClick={openForm} className="apply-button">Apply Now</button>
-            </div>
-          </div>
+    <div className="card">
+      <img src="vol-kerala.avif" alt="Volunteer in Kerala" className="card-img-top" />
+      <div className="card-body">
+        <h5 className="card-title">Volunteer in Kerala</h5>
+        <p className="card-text">Experience Kerala’s culture and contribute to local causes.</p>
+        <p><strong>Duration:</strong> 3 weeks</p>
+        <p><strong>Skill Required:</strong> Environmental awareness, basic conservation techniques</p>
+        <p><strong>Description:</strong> Engage in environmental conservation projects, including beach clean-ups and tree planting initiatives.</p>
+        <p><strong>Important Note:</strong> You cannot participate as a team. We have already fixed the teams on our side.</p>
+        <p><strong>Accommodation:</strong> Includes all expenses, ranging from ₹10,000.</p>
+        <p><strong>About Royal Seats:</strong> Royal Seats offers curated volunteer experiences that allow you to explore the beauty of nature and culture while giving back to communities. Join us on a transformative journey.</p>
+        <button onClick={openForm} className="apply-button">Apply Now</button>
+      </div>
+    </div>
 
-          <div className="card">
-            <img src="vol-jamma.jpg" alt="Volunteer in Jammu" className="card-img-top" />
-            <div className="card-body">
-              <h5 className="card-title">Volunteer in Jammu</h5>
-              <p className="card-text">Help communities in the scenic region of Jammu.</p>
-              <p><strong>Duration:</strong> 1 month</p>
-              <p><strong>Skill Required:</strong> Healthcare support, basic first aid</p>
-              <p><strong>Description:</strong> Provide assistance to medical staff and participate in healthcare initiatives in rural areas.</p>
-              <button onClick={openForm} className="apply-button">Apply Now</button>
-            </div>
-          </div>
+    <div className="card">
+      <img src="vol-raja.jpeg" alt="Volunteer in Rajasthan" className="card-img-top" />
+      <div className="card-body">
+        <h5 className="card-title">Volunteer in Rajasthan</h5>
+        <p className="card-text">Experience the vibrant culture of Rajasthan while helping local artisans.</p>
+        <p><strong>Duration:</strong> 4 weeks</p>
+        <p><strong>Skill Required:</strong> Craftsmanship, communication skills</p>
+        <p><strong>Description:</strong> Support artisans in promoting traditional crafts and engage in community-based tourism initiatives.</p>
+        <p><strong>Important Note:</strong> You cannot participate as a team. We have already fixed the teams on our side.</p>
+        <p><strong>Accommodation:</strong> Includes all expenses, ranging from ₹15,000.</p>
+        <p><strong>About Royal Seats:</strong> With Royal Seats, you can contribute to community development while experiencing the rich heritage of Rajasthan. Join us in supporting local artisans and preserving traditions.</p>
+        <button onClick={openForm} className="apply-button">Apply Now</button>
+      </div>
+    </div>
 
-          <div className="card">
-            <img src="vol-raja.jpeg" alt="Volunteer in Rajasthan" className="card-img-top" />
-            <div className="card-body">
-              <h5 className="card-title">Volunteer in Rajasthan</h5>
-              <p className="card-text">Experience the vibrant culture of Rajasthan while helping local artisans.</p>
-              <p><strong>Duration:</strong> 4 weeks</p>
-              <p><strong>Skill Required:</strong> Craftsmanship, communication skills</p>
-              <p><strong>Description:</strong> Support artisans in promoting traditional crafts and engage in community-based tourism initiatives.</p>
-              <button onClick={openForm} className="apply-button">Apply Now</button>
-            </div>
-          </div>
+    <div className="card">
+      <img src="vol-raja.jpeg" alt="Volunteer in Rajasthan" className="card-img-top" />
+      <div className="card-body">
+        <h5 className="card-title">Volunteer in Rajasthan</h5>
+        <p className="card-text">Support local community development projects and promote sustainable tourism.</p>
+        <p><strong>Duration:</strong> 3 weeks</p>
+        <p><strong>Skill Required:</strong> Community development, basic project management</p>
+        <p><strong>Description:</strong> Work on projects aimed at improving local infrastructure and promoting responsible tourism.</p>
+        <p><strong>Important Note:</strong> You cannot participate as a team. We have already fixed the teams on our side.</p>
+        <p><strong>Accommodation:</strong> Includes all expenses, ranging from ₹12,000.</p>
+        <p><strong>About Royal Seats:</strong> With Royal Seats, you'll not only experience Rajasthan’s majestic landscapes but also actively contribute to the betterment of local communities. Volunteer with us for an enriching experience.</p>
+        <button onClick={openForm} className="apply-button">Apply Now</button>
+      </div>
+    </div>
 
-          <div className="card">
-            <img src="vol-assam.jpg" alt="Volunteer in Assam" className="card-img-top" />
-            <div className="card-body">
-              <h5 className="card-title">Volunteer in Assam</h5>
-              <p className="card-text">Immerse yourself in Assam’s natural beauty and help in wildlife conservation.</p>
-              <p><strong>Duration:</strong> 3 weeks</p>
-              <p><strong>Skill Required:</strong> Basic knowledge of wildlife, environmental conservation</p>
-              <p><strong>Description:</strong> Assist in conservation efforts focused on preserving local wildlife and protecting natural habitats.</p>
-              <button onClick={openForm} className="apply-button">Apply Now</button>
-            </div>
-          </div>
+    <div className="card">
+      <img src="vol-maha.jpeg" alt="Volunteer in Maharashtra" className="card-img-top" />
+      <div className="card-body">
+        <h5 className="card-title">Volunteer in Maharashtra</h5>
+        <p className="card-text">Engage with rural communities in Maharashtra through educational programs.</p>
+        <p><strong>Duration:</strong> 2 weeks</p>
+        <p><strong>Skill Required:</strong> Teaching, basic leadership</p>
+        <p><strong>Description:</strong> Conduct workshops for children and support community-based educational initiatives.</p>
+        <p><strong>Important Note:</strong> You cannot participate as a team. We have already fixed the teams on our side.</p>
+        <p><strong>Accommodation:</strong> Includes all expenses, ranging from ₹9,000.</p>
+        <p><strong>About Royal Seats:</strong> Royal Seats is dedicated to creating life-changing travel experiences, combining education, adventure, and volunteerism to leave a lasting impact. Join us in Maharashtra for an unforgettable journey!</p>
+        <button onClick={openForm} className="apply-button">Apply Now</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div className="card">
-            <img src="vol-maha.jpeg" alt="Volunteer in Maharashtra" className="card-img-top" />
-            <div className="card-body">
-              <h5 className="card-title">Volunteer in Maharashtra</h5>
-              <p className="card-text">Engage with rural communities in Maharashtra through educational programs.</p>
-              <p><strong>Duration:</strong> 2 weeks</p>
-              <p><strong>Skill Required:</strong> Teaching, basic leadership</p>
-              <p><strong>Description:</strong> Conduct workshops for children and support community-based educational initiatives.</p>
-              <button onClick={openForm} className="apply-button">Apply Now</button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Form Section */}
       {isFormOpen && (
