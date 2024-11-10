@@ -14,7 +14,6 @@ import Mumbai from './components/states/Mumbai';
 import Ahmedabad from './components/states/Ahmedabad';
 import Himachal from './components/states/Himachal';
 
-
 import GroupTour from './components/GroupTour';  
 import Bill from './components/group/Bill';
 import Dubaichennai from './components/group/Dubaichennai';
@@ -27,6 +26,12 @@ import PackageByOutside from './components/activities/PackageByOutside';
 import Weather from './components/Weather';
 
 import Contact from './components/Contact';
+
+// Import login, register, and admin-related components
+import Login from './components/login/Login';
+import Register from './components/login/Register';
+import AdminLogin from './components/login/AdminLogin';
+import AdminPanel from './components/login/AdminPanel';
 
 function App() {
   return (
@@ -46,8 +51,6 @@ function App() {
         <Route path="/ahmedabad" element={<Ahmedabad />} />
         <Route path="/himachal" element={<Himachal />} />
 
-
-
         <Route path="/grouptour" element={<GroupTour />} />
         <Route path="/bill" element={<Bill />} />
         <Route path="/dubaichennai" element={<Dubaichennai />} />
@@ -59,7 +62,12 @@ function App() {
         <Route path="/packagebyoutside" element={<PackageByOutside />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/weather" element={<Weather />} />
-        {/* Add routes for the remaining states and activities */}
+
+        {/* Login, Register, and Admin Routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/adminlogin" element={<AdminLogin />} />
+        <Route path="/adminpanel" element={<AdminPanel />} />
       </Routes>
     </Router>
   );

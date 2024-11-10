@@ -97,3 +97,55 @@
 .welcome-content a {
     text-decoration: none; /* No underline for any links in the welcome content */
 }
+/* src/styles/Home.css */
+
+/* src/styles/Home.css */
+
+/* src/styles/Home.css */
+
+.auth-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 40px); /* Leaves space on both sides */
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+  .auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #FFD700; /* Yellow background */
+    color: black; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .auth-buttons button:hover {
+    transform: translateY(-2px); /* Lifts the button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+  }
+  
+  .auth-buttons button:active {
+    transform: translateY(0); /* Resets position when pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces shadow on press */
+  }
+  
+  @keyframes button-glow {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+  }
+  
+  .auth-buttons button {
+    animation: button-glow 1.5s ease-in-out infinite; /* Glowing animation */
+  }
+  

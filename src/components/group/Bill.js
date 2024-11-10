@@ -128,14 +128,14 @@ const Bill = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/submit-bill', {
+            const response = await fetch('http://localhost:5002/api/submit-bill', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
-
+    
             if (response.ok) {
                 const result = await response.json();
                 alert(result.message);
@@ -148,7 +148,7 @@ const Bill = () => {
             alert('Network error. Please try again later.');
         }
     };
-
+    
     return (
         <div className="billing-form-container">
             <h2>Billing Details</h2>

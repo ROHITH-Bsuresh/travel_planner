@@ -1,0 +1,86 @@
+/* src/styles/login/login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .login-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    font-size: 1em;
+  }
+  
+  .login-container input[type="text"]:focus,
+  .login-container input[type="password"]:focus {
+    border-color: #FFD700;
+  }
+  
+  .login-container button {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: slideUp 1s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #e6c200;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-container button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  .login-container p {
+    color: #d9534f;
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* Admin button animation */
+  .login-container button:nth-child(5) {
+    animation: slideUp 1.2s ease;
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

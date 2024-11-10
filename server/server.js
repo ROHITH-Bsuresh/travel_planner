@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const app = express();
-const PORT = 5000;
+const PORT = 5002;
 
 // MongoDB connection (updated without deprecated options)
 mongoose.connect('mongodb://localhost:27017/billing')
@@ -117,6 +117,36 @@ app.post('/api/submit-bill', async (req, res) => {
         res.status(500).json({ message: 'Error saving data to the database' });
     }
 });
+
+// Route to fetch all billing entries
+app.get('/api/get-billings', async (req, res) => {
+    try {
+      const billings = await Billing.find();
+      res.status(200).json(billings);
+    } catch (error) {
+      console.error('Error fetching billings:', error);
+      res.status(500).json({ message: 'Error fetching data' });
+    }
+  });
+
+  // Delete Group Tour
+app.delete('/api/delete-billing/:id', (req, res) => {
+    const { id } = req.params;
+    Billing.findByIdAndDelete(id)
+      .then(() => res.status(200).json({ message: 'Deleted successfully' }))
+      .catch((err) => res.status(500).json({ error: 'Failed to delete' }));
+  });
+  
+  // Update Group Tour
+  app.put('/api/update-billing/:id', (req, res) => {
+    const { id } = req.params;
+    const updatedData = req.body; // Get updated data from the request body
+  
+    Billing.findByIdAndUpdate(id, updatedData, { new: true })
+      .then((updated) => res.status(200).json(updated))
+      .catch((err) => res.status(500).json({ error: 'Failed to update' }));
+  });
+  
 
 // Start the server
 app.listen(PORT, () => {
