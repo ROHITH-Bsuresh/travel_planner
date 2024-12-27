@@ -1,11 +1,11 @@
-// server.js
+
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth');
 
 const app = express();
-app.use(cors());  // Enable CORS
+app.use(cors());  
 app.use(express.json());
 
 mongoose.connect('mongodb://localhost:27017/royal_seats', {

@@ -35,7 +35,6 @@ function Navbar() {
         <button className="dropbtn">Activity</button>
         <div className="dropdown-content">
           <Link to="/volunteer">Volunteer</Link>
-          <Link to="/packagebyoutside">Package by Outside</Link>
         </div>
       </div>
       <Link to="/weather">Weather</Link>

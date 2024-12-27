@@ -1,4 +1,4 @@
-// src/components/Weather.js
+
 import React, { useState } from 'react';
 import '../styles/Weather.css';
 
@@ -34,7 +34,7 @@ function Weather() {
     }
   };
 
-  // Suggest travel based on the current weather conditions
+  
   const getTravelSuggestion = () => {
     if (!weather) return '';
 

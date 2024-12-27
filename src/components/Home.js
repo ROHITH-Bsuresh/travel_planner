@@ -9,12 +9,12 @@ function Home() {
   useEffect(() => {
     const storedUserId = localStorage.getItem('userId');
     if (storedUserId) {
-      setUserId(storedUserId);  // Display the logged-in user's ID
+      setUserId(storedUserId);  
     }
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem('userId');  // Clear user ID on logout
+    localStorage.removeItem('userId');  
     setUserId(null);
     navigate('/login');
   };

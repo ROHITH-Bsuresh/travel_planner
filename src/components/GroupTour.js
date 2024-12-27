@@ -1,6 +1,6 @@
-// src/components/GroupTour.js
+
 import React from 'react';
-import '../styles/GroupTour.css'; // Ensure this path is correct
+import '../styles/GroupTour.css'; 
 
 function GroupTour() {
   return (
